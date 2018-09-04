@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec</RootNamespace>
+    <AssemblyName>Nistec.Imex</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ado\AdoColumn.cs" />
+    <Compile Include="Ado\AdoColumns.cs" />
+    <Compile Include="Ado\AdoEvents.cs" />
+    <Compile Include="Ado\AdoExport.cs" />
+    <Compile Include="Ado\AdoField.cs" />
+    <Compile Include="Ado\AdoImport.cs" />
+    <Compile Include="Ado\AdoManager.cs" />
+    <Compile Include="Ado\AdoMap.cs" />
+    <Compile Include="Ado\AdoRead.cs" />
+    <Compile Include="Ado\AdoState.cs" />
+    <Compile Include="Ado\AdoTable.cs" />
+    <Compile Include="Ado\AdoWrite.cs" />
+    <Compile Include="Ado\AdoOutput.cs" />
+    <Compile Include="Ado\DataHelper.cs" />
+    <Compile Include="Ado\Enums.cs" />
+    <Compile Include="Ado\Interfaces.cs" />
+    <Compile Include="Ado\AdoProperties.cs" />
+    <Compile Include="Ado\QueryType.cs" />
+    <Compile Include="Clipboard\ClipboardRead.cs" />
+    <Compile Include="Clipboard\ClipboardReadProperties.cs" />
+    <Compile Include="Clipboard\Helper.cs" />
+    <Compile Include="Csv\CsvRead.cs" />
+    <Compile Include="Csv\CsvReadProperties.cs" />
+    <Compile Include="Csv\CsvWrite.cs" />
+    <Compile Include="Csv\CsvWriteProperties.cs" />
+    <Compile Include="Csv\FileTypes.cs" />
+    <Compile Include="Csv\Helper.cs" />
+    <Compile Include="Csv\RecordSeparators.cs" />
+    <Compile Include="Custom\CustomTable.cs" />
+    <Compile Include="Custom\CustomTableProperties.cs" />
+    <Compile Include="Html\HtmlHelper.cs" />
+    <Compile Include="Html\HtmlWrite.cs" />
+    <Compile Include="Html\HtmlWriteProperties.cs" />
+    <Compile Include="MSExcel\BIFF12\BIFF12Reader.cs" />
+    <Compile Include="MSExcel\BIFF12\Comments.cs" />
+    <Compile Include="MSExcel\BIFF12\Connections.cs" />
+    <Compile Include="MSExcel\BIFF12\Constants.cs" />
+    <Compile Include="MSExcel\BIFF12\ExcelRead.cs" />
+    <Compile Include="MSExcel\BIFF12\OleReader.cs" />
+    <Compile Include="MSExcel\BIFF12\PrinterSettings.cs" />
+    <Compile Include="MSExcel\BIFF12\QueryTable.cs" />
+    <Compile Include="MSExcel\BIFF12\SharedStrings.cs" />
+    <Compile Include="MSExcel\BIFF12\Styles.cs" />
+    <Compile Include="MSExcel\BIFF12\Table.cs" />
+    <Compile Include="MSExcel\BIFF12\Workbook.cs" />
+    <Compile Include="MSExcel\BIFF12\Worksheet.cs" />
+    <Compile Include="MSExcel\BIFF8\Core.cs" />
+    <Compile Include="MSExcel\BIFF8\ExcelDataReader.cs" />
+    <Compile Include="MSExcel\BIFF8\ExcelRead.cs" />
+    <Compile Include="MSExcel\Common\ExcelRead.cs" />
+    <Compile Include="MSExcel\Common\ExcelTool.cs" />
+    <Compile Include="MSExcel\Common\ExcelType.cs" />
+    <Compile Include="MSExcel\Common\ExcelWrite.cs" />
+    <Compile Include="MSExcel\ExcelReadProperties.cs" />
+    <Compile Include="MSExcel\ExcelWriteProperties.cs" />
+    <Compile Include="MSExcel\OleDb\ExcelRead.cs" />
+    <Compile Include="MSExcel\OleDb\ExcelWrite.cs" />
+    <Compile Include="MSExcel\OleDb\Helper.cs" />
+    <Compile Include="MSExcel\Xml\ExcelRead.cs" />
+    <Compile Include="MSExcel\Xml\ExcelWrite.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\AlignmentOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\AlignmentOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\BorderOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\BorderOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Cell.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\CellCollection.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\CellIndexInfo.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\CellSettings.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Column.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\DocumentProperties.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Enums.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\FontOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\FontOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Formula.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\FormulaParser.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Interfaces.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\InteriorOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\InteriorOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\NamedRange.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Parameter.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\PrintOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Range.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Row.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Styles.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Workbook.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Worksheet.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\XmlStyle.cs" />
+    <Compile Include="MSExcel\Xml\Helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Win\IDataField.cs" />
+    <Compile Include="Win\DataField.cs" />
+    <Compile Include="Win\FieldType.cs" />
+    <Compile Include="Xml\XMLDatabase.cs" />
+    <Compile Include="Xml\XmlRead.cs" />
+    <Compile Include="Xml\XmlReadProperties.cs" />
+    <Compile Include="Xml\XmlWrite.cs" />
+    <Compile Include="Xml\XmlWriteProperties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Preview.bmp" />
+    <EmbeddedResource Include="Images\PreviewDlg.bmp" />
+    <EmbeddedResource Include="Images\Print.bmp" />
+    <EmbeddedResource Include="Images\PrintSetup.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Document.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pdf\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MControl.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nistec.Lib\Nistec.Lib.csproj">
+      <Project>{54f52ed5-aecd-47c6-93d8-7b3358ba7f8c}</Project>
+      <Name>Nistec.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
