@@ -35,7 +35,7 @@ namespace Nistec.Imex.Data
                 case WriterType.Pdf:
                     throw new Exception("ExportType.Pdf not supported");//
                     //_writer = new Nistec.Imex.Pdf.PdfWriter(properties as Pdf.PdfWriteProperties);
-                    break;
+                    //break;
                 default:
                     throw new ArgumentException("WriterType not supported");
             }
